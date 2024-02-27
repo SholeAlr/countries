@@ -1,15 +1,15 @@
-import { useState } from "react";
-import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import CountriesList from "./components/CountriesList";
+import CountryDetails from "./components/CountryDetails";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <div className='bg-cyan-900 px-6 h-[90vh] overflow-scroll grid grid-cols-1 gap-4'>
-        <CountriesList />
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<CountriesList />} />
+        <Route path='/country/:id' element={<CountryDetails />} />
+      </Routes>
+    </Router>
   );
 }
 

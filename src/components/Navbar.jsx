@@ -2,7 +2,7 @@ import Menu from "/src/assets/menu.svg";
 
 const Navbar = () => {
   return (
-    <div className='navbar bg-slate-500 text-base-200'>
+    <div className='navbar bg-cyan-950 shadow text-base-200'>
       <div className='flex-1'>
         <a className='btn btn-ghost text-xl'>Where In the World?🌎</a>
       </div>
